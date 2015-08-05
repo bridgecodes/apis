@@ -150,9 +150,9 @@ $sql2="SET character_set_results=utf8";
 
 function getConnection() {
 	$dbhost="localhost";
-	$dbuser="youtuh25_oscl577";
-	$dbpass="S)15k4.FP2";
-	$dbname="youtuh25_oscl577";
+	$dbuser="$username";
+	$dbpass="$password";
+	$dbname="$db";
 	$dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);	
 	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	return $dbh;
